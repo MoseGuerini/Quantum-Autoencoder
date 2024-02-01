@@ -1,7 +1,7 @@
 # Quantum Autoencoder
 This is an ongoing examination project on Quantum Machine Learning. The goal is to solve the classification problem of the MNIST database of handwritten digits using a Quantum Autoencoder.
 
-Projected stepsc to complete the project:
+Projected steps to complete the project:
 1) Import the MNIST databse and take a look at it
 2) Use some classical ML algorithm to solve the classification problem 
 3) Reduce the dimensionality of the photos using PCA, maxpooling or average pooling
