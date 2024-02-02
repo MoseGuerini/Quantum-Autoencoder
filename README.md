@@ -24,3 +24,11 @@ Here is the plot of 1/20 of the database in the 2-dimensional parameter space
 We can plot singularly every digit to understand the vaiety of forms that the digits can take, here is the plot of the 1's in the 2D parameter space.
 
 ![title](Images/MNIST_Isomap_1.png)
+
+### Gaussian Classifier
+
+![title](Images/Confusion_Matrix_Gaussian.png)
+
+### Random Forest Classifier
+
+![title](Images/Confusion_Matrix_RandomForest.png)
