@@ -46,7 +46,7 @@ We can plot singularly every digit to understand the variety of forms that the d
 ![title](Images/PCA_evr.png)
 
 <p align="middle">
-  <img src="Images/pca_128_reconstructed.png"  width="145" />
-  <img src="Images/pca_64_reconstructed.png" width="145" /> 
-  <img src="Images/pca_128_reconstructed.png" width="145" />
+  <img src="Images/pca_128_reconstructed.png"  width="32%" />
+  <img src="Images/pca_64_reconstructed.png" width="32%" /> 
+  <img src="Images/pca_128_reconstructed.png" width="32%" />
 </p>
