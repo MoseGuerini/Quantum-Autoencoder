@@ -4,8 +4,8 @@ This is an ongoing examination project on Quantum Machine Learning. The goal is 
 # Table of contents
 1. [The MNIST database](#The-MNIST-database)
 2. [Isomap](#Isomap)
-3. [Gaussian Classifier](#Gaussian)
-4. [Random Forest Classifier](#Forest)
+3. [Gaussian Classifier](#Gaussian-Classifier)
+4. [Random Forest Classifier](#Random-Forest-Classifier)
 
 Projected steps to complete the project:
 1) Import the MNIST databse and take a look at it
@@ -20,7 +20,7 @@ Let's take a look at some of the images contained in the database:
 
 ![title](Images/MNIST.png)
 
-## Isomap <a id="Isomap"></a>
+## Isomap
 Each image in the database is 28 x 28 = 784 pixels. We treat each pixel in the images as a feature, thus we have 784 features. It is difficult to visualize our data points in a 784-dimensional parameter space so we make use of the manifold learning algorithm _Isomap_ to reduce the dimensionality to 2 and gain more insight on the structure of the database.
 
 Here is the plot of 1/20 of the database in the 2-dimensional parameter space
@@ -31,10 +31,10 @@ We can plot singularly every digit to understand the variety of forms that the d
 
 ![title](Images/MNIST_Isomap_1.png)
 
-## Gaussian Classifier <a id="Gaussian"></a>
+## Gaussian Classifier 
 
 ![title](Images/Confusion_Matrix_Gaussian.png)
 
-## Random Forest Classifier <a id="Forest"></a>
+## Random Forest Classifier 
 
 ![title](Images/Confusion_Matrix_RandomForest.png)
