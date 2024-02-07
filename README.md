@@ -6,6 +6,7 @@ This is an ongoing examination project on Quantum Machine Learning. The goal is 
 2. [Isomap](#Isomap)
 3. [Gaussian Classifier](#Gaussian)
 4. [Random Forest Classifier](#Forest)
+
 Projected steps to complete the project:
 1) Import the MNIST databse and take a look at it
 2) Use some classical ML algorithm to solve the classification problem 
