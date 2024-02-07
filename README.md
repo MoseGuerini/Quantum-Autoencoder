@@ -2,10 +2,10 @@
 This is an ongoing examination project on Quantum Machine Learning. The goal is to solve the classification problem of the MNIST database of handwritten digits using a Quantum Autoencoder.
 
 # Table of contents
-1. [The MNIST database](#MNIST)
-2. [Isomap](#Isomap)
-3. [Gaussian Classifier](#Gaussian)
-4. [Random Forest Classifier](#Forest)
+1. -[The MNIST database](#MNIST)
+2. -[Isomap](#Isomap)
+3. -[Gaussian Classifier](#Gaussian)
+4. -[Random Forest Classifier](#Forest)
 
 Projected steps to complete the project:
 1) Import the MNIST databse and take a look at it
