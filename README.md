@@ -41,3 +41,12 @@ We can plot singularly every digit to understand the variety of forms that the d
 ### Random Forest Classifier 
 
 ![title](Images/Confusion_Matrix_RandomForest.png)
+
+## PCA reduction 
+![title](Images/PCA_evr.png)
+
+<p align="middle">
+  <img src="Images/pca_128_reconstructed.png"  width="145" />
+  <img src="Images/pca_64_reconstructed.png" width="145" /> 
+  <img src="Images/pca_128_reconstructed.png" width="145" />
+</p>
