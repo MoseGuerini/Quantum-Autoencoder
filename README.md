@@ -1,4 +1,4 @@
-# Quantum Autoencoder
+# MNIST handwritten digits classification problem using a Quantum Autoencoder
 This is an ongoing examination project on Quantum Machine Learning. The goal is to solve the classification problem of the MNIST database of handwritten digits using a Quantum Autoencoder.
 
 # Table of contents
@@ -16,7 +16,7 @@ Projected steps to complete the project:
 4) Figure it out how to encode and decode blocks of the images separately using a Quantum Autoencoder
 
 ## The MNIST database
-The MNIST database is a database of 70000 handwritten digit. We can import it and divide in two sets. The first set consisting of 60000 images will be used as the train set and the remaining 10000 images will be used as the test set. 
+The MNIST database is a database of 70000 handwritten digits. We can import it and divide in two sets. The first set consisting of 60000 images will be used as the train set and the remaining 10000 images will be used as the test set. 
 
 Let's take a look at some of the images contained in the database:
 
