@@ -114,6 +114,7 @@ To see this we compare three images: the image on the left is the original digit
 It is clear that the image is quite well reconstructed and we do not loose too much information reducing the database from 784 features to 128 or 64 features.
 
 ## Quantum Autoencoder
+Complete Quantum Autoencoder circuit:
 
 <p align="center">
 <img src="Images/Autoencoder_circuit.png" alt="drawing" width="60%"/>
@@ -128,13 +129,13 @@ It is clear that the image is quite well reconstructed and we do not loose too m
 RealAmplitudes:
 
 <p align="center">
-<img src="Images/RealAmplitudes_circuit.png" alt="drawing" width="60%"/>
+<img src="Images/RealAmplitudes_Circuit.png" alt="drawing" width="60%"/>
 </p>
 
 EfficientSU2:
 
 <p align="center">
-<img src="Images/EfficientSU2_circuit.png" alt="drawing" width="60%"/>
+<img src="Images/EfficientSU2_Circuit.png" alt="drawing" width="60%"/>
 </p>
 
 ### Feature map
