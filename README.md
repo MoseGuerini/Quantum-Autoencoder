@@ -38,14 +38,22 @@ This result gives us an insight of the variety of different forms that the numbe
 ## Classical ML Classifiers
 We try some Classical ML Classifiers to compare then the results with our Quantum Classifier.
 
-### Gaussian Classifier 
-As a first try we use a Gaussian Classifier
+### Gaussian Naive Bayes Classifier 
 
-accuracy score = 0.5558
+As a first try we use a Gaussian Naive Bayes Classifier, which works under the assumpion that the data from each classes are derived from a Gaussian distribution. Of course this could not be the case, in fact we obtain very poor result:
+
+Accuracy score = 0.5558
+
+We can plot the confusion matrix to better understand the errors made by this classifier.
 
 ![title](Images/Confusion_Matrix_Gaussian.png)
 
+As we can see many digits are misclassified by this simple method.
+
 ### Random Forest Classifier 
+A more sophisticated method is to use a Random Forest Classifier, an ensamble learner built on decision trees. This time we obtain good result:
+
+ | 
 
 ![title](Images/Confusion_Matrix_RandomForest.png)
 
