@@ -120,5 +120,52 @@ It is clear that the image is quite well reconstructed and we do not loose too m
 ### Feature map
 
 ### Swap Test
+The swap test is a procedure that allows us to compute the absolute square of the inner product of two quantum states from the probability of measuring an ancilla qubit.
+Suppose we have a quantum state that is the tensor product of two qubit register plus an ancilla qubit
+
+<center>
+
+$\ket{0}\otimes \ket{i}\otimes \ket{j} = \ket{0}\ket{i}\ket{j}$.
+
+</center>
+
+Applying the hadamard gate to the ancilla qubit leads to
+
+<center>
+
+$\frac{1}{\sqrt{2}}(\ket{0}+\ket{1})\ket{i}\ket{j}$.
+
+</center>
+
+After the controlled swap gate the state become
+
+<center>
+
+$\frac{1}{\sqrt{2}}(\ket{0}\ket{i}\ket{j}+\ket{1}\ket{j}\ket{i})$.
+
+</center>
+
+Then we apply another Hadamard gate to the ancilla and we obtain the state
+
+<center>
+
+$\ket{\psi}=\frac{1}{2}\ket{0}\otimes (\ket{i}\ket{j}+\ket{j}\ket{i})+\frac{1}{2}\ket{1}\otimes (\ket{i}\ket{j}-\ket{j}\ket{i})$.
+
+</center>
+
+Thus the probability of measuring the ancilla qubit in the state $0$,  $p_0=|(\bra{0}\otimes \mathbb{I})\ket{\psi}|^2$ is given by
+
+<center>
+
+$p_0 = \frac{1}{2}-\frac{1}{2}|\braket{i|j}|^2$
+
+</center>
+
+Thus we can obtain the overlap of the two states as
+<center>
+
+$|\braket{i|j}|^2=1-2p_0$.
+
+</center>
 
 ### Results
