@@ -115,7 +115,27 @@ It is clear that the image is quite well reconstructed and we do not loose too m
 
 ## Quantum Autoencoder
 
+<p align="center">
+<img src="Images/Autoencoder_circuit.png" alt="drawing" width="100%"/>
+</p>
+
+<p align="center">
+<img src="Images/Autoencoder_Complete_circuit.png" alt="drawing" width="100%"/>
+</p>
+
 ### Ansatz
+
+RealAmplitudes:
+
+<p align="center">
+<img src="Images/RealAmplitudes_circuit.png" alt="drawing" width="100%"/>
+</p>
+
+EfficientSU2:
+
+<p align="center">
+<img src="Images/EfficientSU2_circuit.png" alt="drawing" width="100%"/>
+</p>
 
 ### Feature map
 
