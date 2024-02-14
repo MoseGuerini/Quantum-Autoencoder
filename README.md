@@ -190,7 +190,7 @@ $|\braket{i|j}|^2=1-2p_0$.
 </center>
 
 ### Results
-
+Below are two tables that contains the results of the autoencoder training. In particular we are intrested in the highest value of the fidelity.
 <center>
 
 |RealAmplitudes rep. | Fidelity | Training time |
