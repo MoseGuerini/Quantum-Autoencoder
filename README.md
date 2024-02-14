@@ -190,3 +190,24 @@ $|\braket{i|j}|^2=1-2p_0$.
 </center>
 
 ### Results
+
+<center>
+
+|RealAmplitudes rep. | Fidelity | Training time |
+|     :---:          | :---:    |   :----:      |
+| 1                  | 0.879    | 10 min        |
+| 2                  | 0.847    | 12 min        |
+| 3                  | 0.887    | 15 min        |
+| 4                  | 0.880    | 24 min        |
+| 5                  | 0.744    | 21 min        |
+
+
+|EfficientSU2 rep. | Fidelity | Training time |
+|     :---:          | :---:    |   :----:      |
+| 1                  | 0.835    | 19 min        |
+| 2                  | -    | -        |
+| 3                  | 0.836    | 20 min        |
+| 4                  | -    | -        |
+| 5                  | -    | -        |
+
+</center>
