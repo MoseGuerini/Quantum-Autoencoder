@@ -10,7 +10,7 @@ This is an ongoing examination project on Quantum Machine Learning. The goal is 
 3. [PCA Reduction](#PCA-reduction)
 4. [Quantum Autoencoder](#quantum-autoencoder)
    1. [Ansatz](#ansatz)
-   2. [Feature map](#feature-map)
+   2. [Loss function](#loss-function)
    3. [Swap Test](#swap-test)
    4. [Results](#results)
 
@@ -114,31 +114,47 @@ To see this we compare three images: the image on the left is the original digit
 It is clear that the image is quite well reconstructed and we do not loose too much information reducing the database from 784 features to 128 or 64 features.
 
 ## Quantum Autoencoder
-Complete Quantum Autoencoder circuit:
 
 <p align="center">
-<img src="Images/Autoencoder_circuit.png" alt="drawing" width="60%"/>
+<img src="Images/Autoencoder_Complete_circuit.png" alt="drawing" width="80%"/>
 </p>
 
-<p align="center">
-<img src="Images/Autoencoder_Complete_circuit.png" alt="drawing" width="60%"/>
-</p>
+A Quantum Autoencoder is a type of neural network that allow us to reduce the dimensionality of the input, in this case a quantum state. It consist of three layers, the input layer, the bottleneck layer and the output layer. 
+In the first layer we encode the pixel via amplitude encoding into a feature map *Parametrized Initialize*. Then we apply the encoder, in this case the parametrized circuit *RealAmplitudes*. After that the dimensionality of our quantum state is reduced and we disregard some of the qubits inizializing them to $\ket{0}$. The final layer consist in applying the decoder (the hermitian conjugate of the encoder) and reconstruct the original input state.
+
 
 ### Ansatz
+The ansatz is the parametrized quantum circuit we choose as the encoder. The parameters of this cicuit acts as the weights of the neural network and after each iteration will be updated to optimize the loss function. There are several possibilities, here we make use of the *RealAmplitudes* and *EfficientSU2* circuits. It is also possible to repeate the circuit several times in order to have a greater number of parameters, thus more flexibility in the training process.
 
 RealAmplitudes:
 
 <p align="center">
-<img src="Images/RealAmplitudes_Circuit.png" alt="drawing" width="60%"/>
+<img src="Images/RealAmplitudes_Circuit.png" alt="drawing" width="80%"/>
 </p>
 
 EfficientSU2:
 
 <p align="center">
-<img src="Images/EfficientSU2_Circuit.png" alt="drawing" width="60%"/>
+<img src="Images/EfficientSU2_Circuit.png" alt="drawing" width="80%"/>
 </p>
 
-### Feature map
+As we can see both *RealAmplitudes* and *EfficientSU2* consist of combination of 1 qubit gates (rotation) and 2 qubit gates to entangle the various qubits.
+
+### Loss Function
+Our goal is to maximize the fidelity between the input state and the output state:
+
+<center>
+
+$max \space F(\rho_{in},\rho_{out})$.
+
+</center>
+
+To do so we apply a swap test between the reference space and the latent space, and then we measure the ancilla qubit, as can be seen by the figure below.
+
+<p align="center">
+<img src="Images/Autoencoder_circuit.png" alt="drawing" width="80%"/>
+</p>
+
 
 ### Swap Test
 The swap test is a procedure that allows us to compute the absolute square of the inner product of two quantum states from the probability of measuring an ancilla qubit.
