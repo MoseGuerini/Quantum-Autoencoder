@@ -206,6 +206,7 @@ $|\braket{i|j}|^2=1-2p_0$.
 </center>
 
 ### Results
+The training process takes a long time, for this reason we initially limit ourselves to considering only the zeros and ones and select only $1/50$ of that images. This leaves us with about $250$ images to use in training process.
 
 Here's an example of optimization routine. As we can see afret many iteration the training converges and we can extract the optimal parameters that minimize the loss function.
 
