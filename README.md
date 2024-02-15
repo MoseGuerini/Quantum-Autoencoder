@@ -206,7 +206,14 @@ $|\braket{i|j}|^2=1-2p_0$.
 </center>
 
 ### Results
-Below are two tables that contains the results of the autoencoder training. In particular we are intrested in the highest value of the fidelity.
+
+Here's an example of optimization routine. As we can see afret many iteration the training converges and we can extract the optimal parameters that minimize the loss function.
+
+<p align="center">
+<img src="Images/RA_4rep.png" alt="drawing" width="80%"/>
+</p>
+
+Below are two tables that summarizes the results of the autoencoder training. In particular we are intrested in the highest value of the fidelity.
 
 <center>
 
