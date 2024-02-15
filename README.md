@@ -209,21 +209,21 @@ $|\braket{i|j}|^2=1-2p_0$.
 Below are two tables that contains the results of the autoencoder training. In particular we are intrested in the highest value of the fidelity.
 <center>
 
-|RealAmplitudes rep. | Fidelity | Training time |
-|     :---:          | :---:    |   :----:      |
-| 1                  | 0.879    | 10 min        |
-| 2                  | 0.847    | 12 min        |
-| 3                  | 0.887    | 15 min        |
-| 4                  | 0.880    | 24 min        |
-| 5                  | 0.744    | 21 min        |
+|RealAmplitudes rep. | Fidelity | Training time | Iteration |
+|     :---:          | :---:    |   :----:      | :---:     |
+| 1                  | 0.739    | 10 min        | 250       |
+| 2                  | 0.627    | 12 min        | 250       |
+| 3                  | 0.743    | 15 min        | 250       |
+| 4                  | 0.777    | 24 min        | 300       |
+| 5                  | 0.744    | 21 min        | 250       |
 
 
-|EfficientSU2 rep. | Fidelity | Training time |
-|     :---:          | :---:    |   :----:      |
-| 1                  | 0.835    | 19 min        |
-| 2                  | -    | -        |
-| 3                  | 0.836    | 20 min        |
-| 4                  | -    | -        |
-| 5                  | -    | -        |
+|EfficientSU2 rep. | Fidelity | Training time | Iteration |
+|     :---:        | :---:    |   :----:      | :---:     |
+| 1                | 0.559    | 19 min        | 350       |
+| 2                | -        | -             | -         |
+| 3                | 0.604    | 20 min        | 250       |
+| 4                | -        | -             | -         |
+| 5                | -        | -             | -         |
 
 </center>
