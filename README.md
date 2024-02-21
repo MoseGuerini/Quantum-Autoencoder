@@ -206,9 +206,9 @@ $|\braket{i|j}|^2=1-2p_0$.
 </center>
 
 ### Results
-The training process takes a long time, for this reason we initially limit ourselves to considering only the zeros and ones and select only $1/50$ of that images. This leaves us with about $250$ images to use in training process.
+The training process takes a long time, for this reason we initially limit ourselves to considering only the zeros and ones and select only $1/50$ of that images. This leaves us with about $250$ images to use in the training process.
 
-Here's an example of optimization routine. As we can see afret many iteration the training converges and we can extract the optimal parameters that minimize the loss function.
+Here's an example of optimization routine. As we can see after many iteration the training converges and we can extract the optimal parameters that minimize the loss function.
 
 <p align="center">
 <img src="Images/RA_4rep.png" alt="drawing" width="80%"/>
@@ -233,9 +233,23 @@ Below are two tables that summarizes the results of the autoencoder training. In
 |EfficientSU2 rep. | Fidelity | Training time | Iteration |
 |     :---:        | :---:    |   :----:      | :---:     |
 | 1                | 0.559    | 19 min        | 350       |
-| 2                | -        | -             | -         |
 | 3                | 0.604    | 20 min        | 250       |
-| 4                | -        | -             | -         |
-| 5                | -        | -             | -         |
 
 </center>
+
+These fidelity values can change every time we go to recalculate this function, given the probabilistic nature of the process.
+For this reason we calculated the fidelity for each image several times, then building the histogram of the occurrences, in order to make explicit the distribution of the fidelity values.
+This time we considered $1/10$ of the zeros and ones, thus about $1200$ images for the training process and about $250$ for the test process.
+
+<p align="center">
+<img src="Images/Fidelity_histogram.png" alt="drawing" width="80%"/>
+</p>
+
+<center >
+
+ | Class | Precision | Recall | f1-score | Support |
+ |:---:  | :---      | :---   | :---:    | :---:   | 
+ | 0     |     -  |   - |    -  |   -   | 
+ | 1     |     -  |   - |    -  |  -   | 
+
+ </center>
