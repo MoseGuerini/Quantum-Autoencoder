@@ -1,5 +1,5 @@
 # MNIST handwritten digits classification problem using a Quantum Autoencoder
-This is an ongoing examination project on Quantum Machine Learning. The goal is to solve the classification problem of the MNIST database of handwritten digits using a Quantum Autoencoder.
+This is an examination project on Quantum Machine Learning done for the course of "Quantum Computing and Technologies" at University of Pisa. The goal was to solve the classification problem of the MNIST database of handwritten digits using a Quantum Autoencoder.
 
 # Table of contents
 1. [The MNIST database](#The-MNIST-database)
@@ -61,7 +61,7 @@ As we can see many digits are misclassified by this simple method.
 A more sophisticated method is to use a Random Forest Classifier, an ensamble learner built on decision trees. This time we obtain good result:
 
 
-<center >
+<div align="center">
 
  | Class | Precision | Recall | f1-score | Support |
  |:---:  | :---      | :---   | :---:    | :---:   | 
@@ -76,7 +76,7 @@ A more sophisticated method is to use a Random Forest Classifier, an ensamble le
  | 8     |     0.96  |   0.96 |    0.96  |   967   |
  | 9     |     0.95  |   0.96 |    0.96  |  1005   |
 
-</center>
+</div>
 
 As before we plot the confusion matrix, this time we can see that the grat majority of digits are correctly classified.
 
@@ -143,11 +143,11 @@ As we can see both *RealAmplitudes* and *EfficientSU2* consist of combination of
 ### Loss Function
 Our goal is to maximize the fidelity between the input state and the output state:
 
-<center>
+<div align="center">
 
 $max \space F(\rho_{in},\rho_{out})$.
 
-</center>
+</div>
 
 To do so we apply a swap test between the reference space and the latent space, and then we measure the ancilla qubit, as can be seen by the figure below.
 
@@ -160,50 +160,51 @@ To do so we apply a swap test between the reference space and the latent space, 
 The swap test is a procedure that allows us to compute the absolute square of the inner product of two quantum states from the probability of measuring an ancilla qubit.
 Suppose we have a quantum state that is the tensor product of two qubit register plus an ancilla qubit
 
-<center>
+<div align="center">
 
 $\ket{0}\otimes \ket{i}\otimes \ket{j} = \ket{0}\ket{i}\ket{j}$.
 
-</center>
+</div>
 
 Applying the hadamard gate to the ancilla qubit leads to
 
-<center>
+<div align="center">
 
 $\frac{1}{\sqrt{2}}(\ket{0}+\ket{1})\ket{i}\ket{j}$.
 
-</center>
+</div>
 
 After the controlled swap gate the state become
 
-<center>
+<div align="center">
 
 $\frac{1}{\sqrt{2}}(\ket{0}\ket{i}\ket{j}+\ket{1}\ket{j}\ket{i})$.
 
-</center>
+</div>
 
 Then we apply another Hadamard gate to the ancilla and we obtain the state
 
-<center>
+<div align="center">
 
 $\ket{\psi}=\frac{1}{2}\ket{0}\otimes (\ket{i}\ket{j}+\ket{j}\ket{i})+\frac{1}{2}\ket{1}\otimes (\ket{i}\ket{j}-\ket{j}\ket{i})$.
 
-</center>
+</div>
 
 Thus the probability of measuring the ancilla qubit in the state $0$,  $p_0=|(\bra{0}\otimes \mathbb{I})\ket{\psi}|^2$ is given by
 
-<center>
+<div align="center">
 
 $p_0 = \frac{1}{2}-\frac{1}{2}|\braket{i|j}|^2$
 
-</center>
+</div>
 
 Thus we can obtain the overlap of the two states as
-<center>
+
+<div align="center">
 
 $|\braket{i|j}|^2=1-2p_0$.
 
-</center>
+</div>
 
 ### Results
 The training process takes a long time, for this reason we initially limit ourselves to considering only the zeros and ones and select only $1/50$ of that images. This leaves us with about $250$ images to use in the training process.
@@ -216,7 +217,7 @@ Here's an example of optimization routine. As we can see after many iteration th
 
 Below are two tables that summarizes the results of the autoencoder training. In particular we are intrested in the highest value of the fidelity.
 
-<center>
+<div align="center">
 
 |RealAmplitudes rep. | Fidelity | Training time | Iteration |
 |     :---:          | :---:    |   :----:      | :---:     |
@@ -226,16 +227,16 @@ Below are two tables that summarizes the results of the autoencoder training. In
 | 4                  | 0.777    | 24 min        | 300       |
 | 5                  | 0.696    | 29 min        | 400       |
  
- </center>
+ </div>
 
-<center>
+<div align="center">
 
 |EfficientSU2 rep. | Fidelity | Training time | Iteration |
 |     :---:        | :---:    |   :----:      | :---:     |
 | 1                | 0.559    | 19 min        | 350       |
 | 3                | 0.604    | 20 min        | 250       |
 
-</center>
+</div>
 
 These fidelity values can change every time we go to recalculate this function, given the probabilistic nature of the process.
 For this reason we calculated the fidelity for each image several times, then building the histogram of the occurrences, in order to make explicit the distribution of the fidelity values.
