@@ -242,7 +242,7 @@ For this reason we calculated the fidelity for each image several times, then bu
 This time we considered $1/10$ of the zeros and ones, thus about $1200$ images for the training process and about $250$ for the test process. As ansatz we used _RealAmplitudes_ with $1$ repetition.
 
 <p align="center">
-<img src="Images/Fidelity_histogram.png" alt="drawing" width="80%"/>
+<img src="Images/Fidelity_histogram.png" alt="drawing" width="60%"/>
 </p>
 
 As we can see the distribution is peaked around $0.9$ which meand that the majority of images are efficiently encoded. Now we can classify the encoded images (reduced from 784 to only 16 features) using a _Random Forest Classifier_.
@@ -258,7 +258,7 @@ As we can see the distribution is peaked around $0.9$ which meand that the major
 We can also plot the confusion matrix:
 
  <p align="center">
-<img src="Images/CM.png" alt="drawing" width="80%"/>
+<img src="Images/CM.png" alt="drawing" width="60%"/>
 </p>
 
 As we can see we get good results, which means that we were able to encode the images efficiently using out Quantum Autoencoder.
