@@ -262,4 +262,4 @@ We can also plot the confusion matrix:
 <img src="Images/CM.png" alt="drawing" width="60%"/>
 </p>
 
-As we can see we get good results, which means that we were able to encode the images efficiently using out Quantum Autoencoder.
+As we can see we get good results, which means that we were able to encode the images efficiently using our Quantum Autoencoder.
