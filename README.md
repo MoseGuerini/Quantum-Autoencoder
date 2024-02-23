@@ -246,14 +246,15 @@ This time we considered $1/10$ of the zeros and ones, thus about $1200$ images f
 </p>
 
 As we can see the distribution is peaked around $0.9$ which meand that the majority of images are efficiently encoded. Now we can classify the encoded images (reduced from 784 to only 16 features) using a _Random Forest Classifier_.
-<center >
+
+<div align="center">
 
  | Class | Precision | Recall | f1-score | Support |
  |:---:  | :---      | :---   | :---:    | :---:   | 
  | 0     |     0.86  |   0.82 |    0.84  |   99    | 
  | 1     |     0.85  |   0.88 |    0.87  |   113   | 
 
- </center>
+ </div>
 
 We can also plot the confusion matrix:
 
