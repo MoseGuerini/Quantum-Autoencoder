@@ -239,17 +239,26 @@ Below are two tables that summarizes the results of the autoencoder training. In
 
 These fidelity values can change every time we go to recalculate this function, given the probabilistic nature of the process.
 For this reason we calculated the fidelity for each image several times, then building the histogram of the occurrences, in order to make explicit the distribution of the fidelity values.
-This time we considered $1/10$ of the zeros and ones, thus about $1200$ images for the training process and about $250$ for the test process.
+This time we considered $1/10$ of the zeros and ones, thus about $1200$ images for the training process and about $250$ for the test process. As ansatz we used _RealAmplitudes_ with $1$ repetition.
 
 <p align="center">
 <img src="Images/Fidelity_histogram.png" alt="drawing" width="80%"/>
 </p>
 
+As we can see the distribution is peaked around $0.9$ which meand that the majority of images are efficiently encoded. Now we can classify the encoded images (reduced from 784 to only 16 features) using a _Random Forest Classifier_.
 <center >
 
  | Class | Precision | Recall | f1-score | Support |
  |:---:  | :---      | :---   | :---:    | :---:   | 
- | 0     |     -  |   - |    -  |   -   | 
- | 1     |     -  |   - |    -  |  -   | 
+ | 0     |     0.86  |   0.82 |    0.84  |   99    | 
+ | 1     |     0.85  |   0.88 |    0.87  |   113   | 
 
  </center>
+
+We can also plot the confusion matrix:
+
+ <p align="center">
+<img src="Images/CM.png" alt="drawing" width="80%"/>
+</p>
+
+As we can see we get good results, which means that we were able to encode the images efficiently using out Quantum Autoencoder.
