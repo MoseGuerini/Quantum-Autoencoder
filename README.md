@@ -194,7 +194,7 @@ Thus the probability of measuring the ancilla qubit in the state $0$,  $p_0=|(\b
 
 <div align="center">
 
-$p_0 = \frac{1}{2}-\frac{1}{2}|\braket{i|j}|^2$
+$p_0 = \frac{1}{2}+\frac{1}{2}|\braket{i|j}|^2$
 
 </div>
 
@@ -202,7 +202,7 @@ Thus we can obtain the overlap of the two states as
 
 <div align="center">
 
-$|\braket{i|j}|^2=1-2p_0$.
+$|\braket{i|j}|^2=2p_0-1$.
 
 </div>
 
