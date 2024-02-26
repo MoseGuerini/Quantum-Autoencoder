@@ -252,15 +252,15 @@ As we can see the distribution is peaked around $0.9$ which meand that the major
 
  | Class | Precision | Recall | f1-score | Support |
  |:---:  | :---      | :---   | :---:    | :---:   | 
- | 0     |     0.86  |   0.82 |    0.84  |   99    | 
- | 1     |     0.85  |   0.88 |    0.87  |   113   | 
+ | 0     |     0.66  |   0.97 |    0.79  |   94    | 
+ | 1     |     0.96  |   0.61 |    0.75  |   113   | 
 
  </div>
 
 We can also plot the confusion matrix:
 
  <p align="center">
-<img src="Images/CM.png" alt="drawing" width="60%"/>
+<img src="Images/CF_RA_3rep.png" alt="drawing" width="60%"/>
 </p>
 
 As we can see we get good results, which means that we were able to encode the images efficiently using our Quantum Autoencoder.
